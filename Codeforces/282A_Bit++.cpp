@@ -13,13 +13,9 @@ int main() {
         string input;
         cin >> input;
 
-        if (input[0] == 'X' && input[1] == '+' && input[2] == '+')
+        if (input == "++X" || input == "X++")
             result++;
-        else if (input[0] == '+' && input[1] == '+' && input[2] == 'X')
-            result++;
-        else if (input[0] == 'X' && input[1] == '-' && input[2] == '-')
-            result--;
-        else if (input[0] == '-' && input[1] == '-' && input[2] == 'X')
+        else if (input == "--X" || input == "X--")
             result--;
 
         n--;
