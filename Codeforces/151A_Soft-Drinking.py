@@ -1,7 +1,7 @@
 n, k, l, c, d, p, nl, np = [int(x) for x in input().split()]
 
-toasts = (k * l) // nl
+drink_toasts = (k * l) // nl
 lime_toasts = c * d
-salt_toasts = p * np
+salt_toasts = p // np
 
-print(min(toasts, lime_toasts, salt_toasts) // n)
+print(min(drink_toasts, lime_toasts, salt_toasts) // n)
